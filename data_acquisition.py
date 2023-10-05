@@ -1,0 +1,1 @@
+'''The purpose of this program is to acquire data from the Wiki'''
