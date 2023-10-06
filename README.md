@@ -34,4 +34,8 @@ The code will produce 3 raw data files: mobile_app_pageviews.json, mobile_web_pa
     "agent" - this is the type of agent, we will only be looking at "user"
     "views" - this is the number of pageviews over the timestamp specified
     
+### Known Data Issues and Considerations
+1. Not all files can be pulled using the Pageviews API. Specifically, the article title "Victor/Victoria" cannot be pulled due to the inclusion of the "/" and its interpretation in the API.
+
+2. Not all pageviews may refer to views of a movie's page. As an example, "Encanto", a film released in 2021, has pageview data starting in 2015. It's possible that this may be occurring for other movies' pages that have names which would be found in other contexts.
 
