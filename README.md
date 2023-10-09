@@ -4,8 +4,7 @@
 The goal of this project is to acquire monthly article traffic data, analyze it, and publish the  results in a reproducible way.
 
 ### Sources and Licenses:
-The source data uses the following license:
-**EKRC INSERT LICENSE HERE
+The source data comes from English Wikipedia, the text of which is licensed under "Creative Commons Attribution Share-Alike license" (https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License)
 
 We also use the Wikimedia Foundation REST API which has the following
 terms of use:
@@ -21,7 +20,11 @@ Additionally, we will be using a list of Academy Award winning article titles pr
 ### Steps to replicate results:
 1. Download thank_the_academy.AUG.2023.csv from https://docs.google.com/spreadsheets/d/1A1h_7KAo7KXaVxdScJmIVPTvjb3IuY9oZhNV4ZHxrxw/edit#gid=1229854301. Save this data in your project repository in the "raw_data" directory.
 
-2. **EKRC INSERT REST OF STEPS
+2. Run the "data_acquisition" script located in the scr folder
+
+3. Run the "data_processing" script located in the scr folder
+
+4. Run the "data_analysis" script located in the scr folder. In this scipt there will be notes on where screen shots of graphs should be taken. 
 
 ### Files Created:
 The code will produce 3 raw data files: mobile_app_pageviews.json, mobile_web_pageviews.json, and desktop_pageviews.json. The files are organized by article titles (keys) and the value variables are as follows:
@@ -45,7 +48,7 @@ The code will then produce 3 clean data files: academy_monthly_cumulative_201507
 
 For academy_monthly_mobile_201507-202309.json, the "views" field will be a sum of both the mobile app and mobile web raw monthly views. For academy_monthly_cumulative_201507-202309.json, the "views" field will be a sum of the views in the clean mobile file and desktop file.
 
-The final output of the program is 3 graphs.
+The final output of the program is 3 graphs. These graphs are created in-line in the notebook, and the user must take a screen shot of them as noted in the code and instructions above. The final screen shots are saved to the "results" folder and are the only items in the folder.
 
     
 ### Known Data Issues and Considerations
